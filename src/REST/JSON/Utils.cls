@@ -272,7 +272,7 @@ GetLocationData(pieces, len, data, typeof, prevData, errPrefix, path, status)
 ShuffleOut(pieces, len, data, errPrefix, path, status)
 	Set status = 1
 	Set size = data.%Size()
-	write !,"pieces(len)="_pieces(len)_"  size="_size,!
+	//write !,"pieces(len)="_pieces(len)_"  size="_size,!
 	If pieces(len)'>(size-1) {
 		For j = (size-1):-1:pieces(len) {
 			Do data.%Set(j+1,data.%Get(j))
