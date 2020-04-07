@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Export generator="Cache" version="25">
+  <Document name="objectscript-json-patch.ZPM">
+    <Module>
+      <Name>objectscript-json-patch</Name>
+      <Version>1.0.0</Version>
+      <Packaging>module</Packaging>
+      <SourcesRoot>src</SourcesRoot>
+      <Resource Name="Grongier.JSON.PKG"/>
+      <UnitTest Name="tests" Package="Test.Grongier.JSON" Phase="test"/>
+    </Module>
+</Document>
+</Export>
