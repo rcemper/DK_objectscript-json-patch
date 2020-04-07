@@ -7,7 +7,7 @@
       <Packaging>module</Packaging>
       <SourcesRoot>src</SourcesRoot>
       <Resource Name="Grongier.JSON.PKG"/>
-      <UnitTest Name="tests" Package="Test.Grongier.JSON" Phase="test"/>
+      <UnitTest Name="src" Package="Test.Grongier.JSON" Phase="test"/>
     </Module>
 </Document>
 </Export>
