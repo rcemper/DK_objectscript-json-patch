@@ -1,6 +1,6 @@
 /// Run all test
-/// do ##class(%UnitTest.Manager).DebugRunTestCase("","Test.REST.JSON.Utils",,)
-Class Test.REST.JSON.Utils Extends %UnitTest.TestCase
+/// do ##class(%UnitTest.Manager).DebugRunTestCase("","Test.Grongier.JSON.Utils",,)
+Class Test.Grongier.JSON.Utils Extends %UnitTest.TestCase
 {
 
 Method TestAddMissingObj()
@@ -16,7 +16,7 @@ Method TestAddMissingObj()
   set tDoc = tTest.doc
   set tPatch = tTest.patch
   set tExpexted = tTest.expected
-  do $$$AssertStatusNotOK(##class(REST.JSON.Utils).Patch(tDoc,tPatch,.Update))
+  do $$$AssertStatusNotOK(##class(Grongier.JSON.Utils).Patch(tDoc,tPatch,.Update))
 }
 
 Method TestAddObjMember()
@@ -50,7 +50,7 @@ Method TestAddObjMember()
   set tDoc = tTest.doc
   set tPatch = tTest.patch
   set tExpexted = tTest.expected
-  do $$$AssertStatusOK(##class(REST.JSON.Utils).Patch(tDoc,tPatch,.Update))
+  do $$$AssertStatusOK(##class(Grongier.JSON.Utils).Patch(tDoc,tPatch,.Update))
   do $$$AssertEquals(tDoc.%ToJSON(),tExpexted.%ToJSON())
 }
 
@@ -73,7 +73,7 @@ Method TestAddArrayElement()
   set tDoc = tTest.doc
   set tPatch = tTest.patch
   set tExpexted = tTest.expected
-  do $$$AssertStatusOK(##class(REST.JSON.Utils).Patch(tDoc,tPatch,.Update))
+  do $$$AssertStatusOK(##class(Grongier.JSON.Utils).Patch(tDoc,tPatch,.Update))
   do $$$AssertEquals(tDoc.%ToJSON(),tExpexted.%ToJSON())
 }
 
@@ -97,7 +97,7 @@ Method TestRemoveObjectMember()
   set tDoc = tTest.doc
   set tPatch = tTest.patch
   set tExpexted = tTest.expected
-  do $$$AssertStatusOK(##class(REST.JSON.Utils).Patch(tDoc,tPatch,.Update))
+  do $$$AssertStatusOK(##class(Grongier.JSON.Utils).Patch(tDoc,tPatch,.Update))
   do $$$AssertEquals(tDoc.%ToJSON(),tExpexted.%ToJSON())
 }
 
@@ -120,7 +120,7 @@ Method TestRemoveArreyElement()
   set tDoc = tTest.doc
   set tPatch = tTest.patch
   set tExpexted = tTest.expected
-  do $$$AssertStatusOK(##class(REST.JSON.Utils).Patch(tDoc,tPatch,.Update))
+  do $$$AssertStatusOK(##class(Grongier.JSON.Utils).Patch(tDoc,tPatch,.Update))
   do $$$AssertEquals(tDoc.%ToJSON(),tExpexted.%ToJSON())
 }
 
@@ -145,7 +145,7 @@ Method TestReplaceValue()
   set tDoc = tTest.doc
   set tPatch = tTest.patch
   set tExpexted = tTest.expected
-  do $$$AssertStatusOK(##class(REST.JSON.Utils).Patch(tDoc,tPatch,.Update))
+  do $$$AssertStatusOK(##class(Grongier.JSON.Utils).Patch(tDoc,tPatch,.Update))
   do $$$AssertEquals(tDoc.%ToJSON(),tExpexted.%ToJSON())
 }
 
@@ -180,7 +180,7 @@ Method TestMoveValue()
   set tDoc = tTest.doc
   set tPatch = tTest.patch
   set tExpexted = tTest.expected
-  do $$$AssertStatusOK(##class(REST.JSON.Utils).Patch(tDoc,tPatch,.Update))
+  do $$$AssertStatusOK(##class(Grongier.JSON.Utils).Patch(tDoc,tPatch,.Update))
   do $$$AssertEquals(tDoc.%ToJSON(),tExpexted.%ToJSON())
 }
 
@@ -201,7 +201,7 @@ Method TestValueError()
   set tDoc = tTest.doc
   set tPatch = tTest.patch
   set tExpexted = tTest.expected
-  do $$$AssertStatusNotOK(##class(REST.JSON.Utils).Patch(tDoc,tPatch,.Update))
+  do $$$AssertStatusNotOK(##class(Grongier.JSON.Utils).Patch(tDoc,tPatch,.Update))
 }
 
 Method TestAddNestedMemberObj()
@@ -227,7 +227,7 @@ Method TestAddNestedMemberObj()
   set tDoc = tTest.doc
   set tPatch = tTest.patch
   set tExpexted = tTest.expected
-  do $$$AssertStatusOK(##class(REST.JSON.Utils).Patch(tDoc,tPatch,.Update))
+  do $$$AssertStatusOK(##class(Grongier.JSON.Utils).Patch(tDoc,tPatch,.Update))
   do $$$AssertEquals(tDoc.%ToJSON(),tExpexted.%ToJSON())
 }
 
@@ -252,7 +252,7 @@ Method TestIgnoringUnrecognized()
   set tDoc = tTest.doc
   set tPatch = tTest.patch
   set tExpexted = tTest.expected
-  do $$$AssertStatusOK(##class(REST.JSON.Utils).Patch(tDoc,tPatch,.Update))
+  do $$$AssertStatusOK(##class(Grongier.JSON.Utils).Patch(tDoc,tPatch,.Update))
   do $$$AssertEquals(tDoc.%ToJSON(),tExpexted.%ToJSON())
 }
 
@@ -274,7 +274,7 @@ Method TestUnrecognizedTarget()
   set tDoc = tTest.doc
   set tPatch = tTest.patch
   set tExpexted = tTest.expected
-  do $$$AssertStatusNotOK(##class(REST.JSON.Utils).Patch(tDoc,tPatch,.Update))
+  do $$$AssertStatusNotOK(##class(Grongier.JSON.Utils).Patch(tDoc,tPatch,.Update))
 }
 
 Method TestInvalidPatch()
@@ -296,7 +296,7 @@ Method TestInvalidPatch()
   set tDoc = tTest.doc
   set tPatch = tTest.patch
   set tExpexted = tTest.expected
-  do $$$AssertStatusNotOK(##class(REST.JSON.Utils).Patch(tDoc,tPatch,.Update))
+  do $$$AssertStatusNotOK(##class(Grongier.JSON.Utils).Patch(tDoc,tPatch,.Update))
 }
 
 Method TestEscapeOrder()
@@ -318,7 +318,7 @@ Method TestEscapeOrder()
   set tDoc = tTest.doc
   set tPatch = tTest.patch
   set tExpexted = tTest.expected
-  do $$$AssertStatusOK(##class(REST.JSON.Utils).Patch(tDoc,tPatch,.Update))
+  do $$$AssertStatusOK(##class(Grongier.JSON.Utils).Patch(tDoc,tPatch,.Update))
   do $$$AssertEquals(tDoc.%ToJSON(),tExpexted.%ToJSON())
 }
 
@@ -339,7 +339,7 @@ Method TestAddArray()
   set tDoc = tTest.doc
   set tPatch = tTest.patch
   set tExpexted = tTest.expected
-  do $$$AssertStatusOK(##class(REST.JSON.Utils).Patch(tDoc,tPatch,.Update))
+  do $$$AssertStatusOK(##class(Grongier.JSON.Utils).Patch(tDoc,tPatch,.Update))
   do $$$AssertEquals(tDoc.%ToJSON(),tExpexted.%ToJSON())
 }
 
@@ -359,7 +359,7 @@ Method TestCompStringNum()
   set tDoc = tTest.doc
   set tPatch = tTest.patch
   set tExpexted = tTest.expected
-  do $$$AssertStatusNotOK(##class(REST.JSON.Utils).Patch(tDoc,tPatch,.Update))
+  do $$$AssertStatusNotOK(##class(Grongier.JSON.Utils).Patch(tDoc,tPatch,.Update))
 }
 
 }

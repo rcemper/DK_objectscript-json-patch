@@ -1,4 +1,4 @@
-Class REST.JSON.Utils
+Class Grongier.JSON.Utils
 {
 
 ClassMethod Patch(pResourceObj As %Library.DynamicObject, tPatchObj As %Library.DynamicObject, Output pUpdated As %Boolean) As %Status
