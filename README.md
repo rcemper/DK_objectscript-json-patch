@@ -52,6 +52,7 @@ Do ##class(Grongier.JSON.Utils).Patch(tDoc,tPatch)
 
 zw tDoc.%ToJSON()
 ```
+Result
 ```json
   {
     "foo": {
