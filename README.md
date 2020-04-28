@@ -64,3 +64,17 @@ Result
           }
    }
  ```
+ 
+ ## Test this module
+ 
+ Natively from git :
+ 
+ ```objectscript
+ do ##class(%UnitTest.Manager).DebugRunTestCase("","Test.Grongier.JSON.Utils",,)
+ ```
+ 
+ With zpm :
+ ```
+ USER>zpm
+ zpm:USER>module-action objectscript-json-patch test
+ ```
