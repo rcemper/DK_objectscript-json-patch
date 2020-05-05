@@ -65,18 +65,22 @@ Result
               "thud": "fred"
           }
    }
- ```
+```
  
- ## Test this module
+## Test this module
  
- Natively from git :
+Natively from git :
  
- ```objectscript
- do ##class(%UnitTest.Manager).DebugRunTestCase("","Test.Grongier.JSON.Utils",,)
- ```
+```objectscript
+do ##class(%UnitTest.Manager).DebugRunTestCase("","Test.Grongier.JSON.Utils",,)
+```
  
- With zpm :
- ```
- USER>zpm
- zpm:USER>module-action objectscript-json-patch test
- ```
+With zpm :
+```
+USER>zpm
+zpm:USER>module-action objectscript-json-patch test
+```
+
+## Special thanks 
+* Michel Liberado for the idea
+* 
