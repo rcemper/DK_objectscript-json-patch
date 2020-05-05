@@ -27,7 +27,7 @@ Do ##class(Grongier.JSON.Utils).Patch(tDoc,tPatch)
 Where :
 
 * tDoc is a %DynamicObject (JSON)
-* tPatch is a %DynamicObject of the patch (the JSON Patch).
+* tPatch is a %DynamicArray of the patches (the JSON Patch).
 
 The result will be *tDoc* patched.
 
