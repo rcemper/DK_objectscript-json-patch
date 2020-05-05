@@ -1,5 +1,8 @@
 # objectscript-json-patch
 
+![alt text](https://raw.githubusercontent.com/grongierisc/objectscript-json-patch/master/misc/jsonpatch.png)
+
+
 An implementation of JSON-Path in ObjectScript.
 
 ## Why you should use JSON-Patch
