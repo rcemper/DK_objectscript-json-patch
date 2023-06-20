@@ -8,8 +8,7 @@
       <Packaging>module</Packaging>
       <SourcesRoot>src</SourcesRoot>
       <Resource Name="Grongier.JSON.PKG"/>
-     <!--<UnitTest Name="/src/cls/Test/Grongier/JSON/" Package="Test.Grongier.JSON" Phase="test"/>-->
-      <UnitTest Name="/src/cls/" Package="Test.Grongier.JSON" Phase="test"/>
+     <UnitTest Name="/src/cls/" Package="Test.Grongier.JSON" Phase="test"/>
     </Module>
 </Document>
 </Export>
